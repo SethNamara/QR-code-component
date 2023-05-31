@@ -1,0 +1,88 @@
+:root {
+
+    --clr-primary-100: hsl(0, 0%, 100%);
+    --clr-primary-200: hsl(212, 45%, 89%);
+
+    --clr-accent-100: hsl(218, 44%, 22%);
+    --clr-accent-200: hsl(220, 15%, 55%);
+
+    --font-family: 'Outfit', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-100: 0.938rem;
+    --fs-200: 1rem;
+    --fs-300: 1.125rem;
+    --fs-400: 1.25rem;
+    --fs-500: 1.375rem;
+}
+
+/* === Reset styling === */
+
+*{
+    margin: 0;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    font: inherit;
+}
+
+img,
+svg,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* === General styling === */
+
+body {
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: var(--fs-100);
+    font-weight: var(--fw-regular);
+    background-color: var(--clr-primary-200);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--clr-primary-100);
+    max-width: 30rem;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.card {
+    margin: 1rem;
+    max-width: 20rem;
+}
+
+.code_section,
+.qr_code {
+    border-radius: 10px;
+}
+
+.information {
+    padding: 1.8rem 0;
+}
+
+.heading {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+    color: var(--clr-accent-100);
+    padding-bottom: 1rem;
+    max-width: 19.5rem;
+}
+
+.info_body {
+    color: var(--clr-accent-200);
+    font-size: var(--fs-200);
+    font-weight: var(--fw-regular);
+    max-width: 19rem;
+}
